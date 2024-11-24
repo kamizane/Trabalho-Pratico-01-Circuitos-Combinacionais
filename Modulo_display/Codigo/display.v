@@ -1,4 +1,4 @@
-`include "../Modulo_verificacao_de_paridade/v_paridade.v"
+`include "../../Modulo_verificacao_de_paridade/Codigo/v_paridade.v"
 module display_7_seg (b1,b2,b3,b4,b5,b_par,A,B,C,D,E,F,G);
     input b1,b2,b3,b4,b5,b_par,S;
     output reg A,B,C,D,E,F,G;
