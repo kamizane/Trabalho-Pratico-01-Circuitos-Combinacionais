@@ -1,4 +1,4 @@
-`include "display.v"
+`include "./display.v"
 
 module display_tb();
 

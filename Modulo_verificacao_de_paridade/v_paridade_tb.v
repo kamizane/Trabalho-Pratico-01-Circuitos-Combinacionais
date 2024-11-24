@@ -1,4 +1,4 @@
-`include "v_paridade.v"
+`include "./v_paridade.v"
 module verificador_paridade_tb;
     
     reg b1, b2, b3, b4, b5, bp; //entradas
