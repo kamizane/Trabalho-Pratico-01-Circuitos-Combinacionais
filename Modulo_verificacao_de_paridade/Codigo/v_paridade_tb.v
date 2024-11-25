@@ -5,7 +5,7 @@ module verificador_paridade_tb;
     wire S; //saida          
 
     verificador_paridade teste(  
-        .b1(b1), //faz a conexão com o modulo
+        .b1(b1), //faz a conexão com o modulo de paridade
         .b2(b2),
         .b3(b3),
         .b4(b4),
@@ -15,8 +15,10 @@ module verificador_paridade_tb;
     );
 
     initial begin
+        //gera o arquivo para visualizar a forma de ondas
         $dumpfile("v_paridade.vcd");
         $dumpvars;
+        //monitora as variações nas variáveis e exibe no terminal
         $display("b1 b2 b3 b4 b5 bp - S");
         $monitor("%b  %b  %b  %b  %b  %b  %b", b1, b2, b3, b4, b5, bp, S);
         
